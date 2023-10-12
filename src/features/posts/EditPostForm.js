@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
+
 import { postUpdated } from './postsSlice'
 
 export const EditPostForm = ({ match }) => {
@@ -30,7 +31,7 @@ export const EditPostForm = ({ match }) => {
     <section>
       <h2>Edit Post</h2>
       <form>
-        <lable htmlFor="postTitle">Post Title:</lable>
+        <label htmlFor="postTitle">Post Title:</label>
         <input
           type="text"
           id="postTitle"
@@ -53,5 +54,3 @@ export const EditPostForm = ({ match }) => {
     </section>
   )
 }
-
-export default EditPostForm
